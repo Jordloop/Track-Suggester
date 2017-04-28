@@ -5,3 +5,7 @@ body {
 #cSharpWin, #cssWin, #rubyWin, #cSharpCssTie, #cssRubyTie, #cSharpRubyTie {
   display: none;
 }
+
+.submitBtn {
+  margin-top: 10px;
+}

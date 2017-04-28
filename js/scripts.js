@@ -27,7 +27,7 @@ $(function(){
     } else {
       $(console.log("Error in if code"))
     };
-    $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
+    $(console.log("C#: "+cSharp, "CSS: "+cssDesign, "Ruby: "+rubyRails));
     // SECONDQUESTION LOGIC
     if (
       secondAnswer === "Design") {
@@ -41,7 +41,7 @@ $(function(){
     } else {
       $(console.log("Error in if code"))
     };
-    $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
+    $(console.log("C#:: "+cSharp, "CSS:: "+cssDesign, "Ruby:: "+rubyRails));
     // THIRDQUESTION LOGIC
     if (
       thirdAnswer === "Design") {
@@ -55,7 +55,7 @@ $(function(){
     } else {
       $(console.log("Error in if code"))
     };
-    $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
+    $(console.log("C#: "+cSharp, "CSS: "+cssDesign, "Ruby: "+rubyRails));
     // FOURTHQUESTION LOGIC
     if (
       fourthAnswer === "Design") {
@@ -69,7 +69,7 @@ $(function(){
     } else {
       $(console.log("Error in if code"))
     };
-    $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
+    $(console.log("C#: "+cSharp, "CSS: "+cssDesign, "Ruby: "+rubyRails));
     // FIFTHQUESTION LOGIC
     if (
       fifthAnswer === "Design") {
@@ -83,7 +83,7 @@ $(function(){
     } else {
       $(console.log("Error in if code"))
     };
-    $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
+    $(console.log("C#: "+cSharp, "CSS: "+cssDesign, "Ruby: "+rubyRails));
 //----------INTERFACE LOGIC----------
     if (
       cSharp > cssDesign && cSharp > rubyRails) {
@@ -120,7 +120,6 @@ $(function(){
           $(console.log("Ruby and C#"))
           $(".output").hide();
           $("#cSharpRubyTie").show();
-
       };
     };
   })

@@ -8,69 +8,76 @@
   <meta charset="utf-8">
   <title></title>
 </head>
-<body>
-  <div class="container">
-    <!-- FORM -->
-    <form id="user-input">
-      <!-- FIRSTQUESTION -->
-      <label for="firstQuestion">Question One</label>
-      <select class="form-control" id="firstQuestion">
-        <option value="C#">C#</option>
-        <option value="Design">CSS</option>
-        <option value="Ruby">Ruby</option>
-      </select>
-      <!-- SECONDQUESTION -->
-      <label for="secondQuestion">Question Two</label>
-      <select class="form-control" id="secondQuestion">
-        <option value="Design">CSS</option>
-        <option value="C#">C#</option>
-        <option value="Ruby">RUBY</option>
-      </select>
-      <!-- THIRDQUESTION -->
-      <label for="thirdQuestion">Question Three</label>
-      <select class="form-control" id="thirdQuestion">
-        <option value="Design">CSS</option>
-        <option value="C#">C#</option>
-        <option value="Ruby">RUBY</option>
-      </select>
-      <!-- FOURTHQUESTION -->
-      <label for="fourthQuestion">Question Four</label>
-      <select class="form-control" id="fourthQuestion">
-        <option value="Design">CSS</option>
-        <option value="C#">C#</option>
-        <option value="Ruby">RUBY</option>
-      </select>
-      <!-- FIFTHQUESTION -->
-      <label for="fifthQuestion">Question Five</label>
-      <select class="form-control" id="fifthQuestion">
-        <option value="Design">CSS</option>
-        <option value="C#">C#</option>
-        <option value="Ruby">RUBY</option>
-      </select>
-      <!-- BUTTON -->
-      <button type="submit" class="btn">Submit</button>
-    </form>
-    <!-- OUTPUT -->
+  <body>
     <div class="container">
-      <div class="output" id="cSharpWin">
-        <h1>C# Win</h1>
-      </div>
-      <div class="output" id="cssWin">
-        <h1>CSS Win</h1>
-      </div>
-      <div class="output" id="rubyWin">
-        <h1>Ruby Win</h1>
-      </div>
-      <div class="output" id="cSharpCssTie">
-        <h1>C# CSS Tie</h1>
-      </div>
-      <div class="output" id="cssRubyTie">
-        <h1>CSS Ruby Tie</h1>
-      </div>
-      <div class="output" id="cSharpRubyTie">
-        <h1>C# Ruby Tie</h1>
-      </div>
+      <!-- FORM -->
+      <form id="user-input">
+        <!-- FIRSTQUESTION -->
+        <label for="firstQuestion">Question One</label>
+        <select class="form-control" id="firstQuestion">
+          <option value="C#">C#</option>
+          <option value="Design">CSS</option>
+          <option value="Ruby">Ruby</option>
+        </select>
+        <!-- SECONDQUESTION -->
+        <label for="secondQuestion">Question Two</label>
+        <select class="form-control" id="secondQuestion">
+          <option value="Design">CSS</option>
+          <option value="C#">C#</option>
+          <option value="Ruby">RUBY</option>
+        </select>
+        <!-- THIRDQUESTION -->
+        <label for="thirdQuestion">Question Three</label>
+        <select class="form-control" id="thirdQuestion">
+          <option value="Design">CSS</option>
+          <option value="C#">C#</option>
+          <option value="Ruby">RUBY</option>
+        </select>
+        <!-- FOURTHQUESTION -->
+        <label for="fourthQuestion">Question Four</label>
+        <select class="form-control" id="fourthQuestion">
+          <option value="Design">CSS</option>
+          <option value="C#">C#</option>
+          <option value="Ruby">RUBY</option>
+        </select>
+        <!-- FIFTHQUESTION -->
+        <label for="fifthQuestion">Question Five</label>
+        <select class="form-control" id="fifthQuestion">
+          <option value="Design">CSS</option>
+          <option value="C#">C#</option>
+          <option value="Ruby">RUBY</option>
+        </select>
+        <!-- BUTTON -->
+        <button type="submit" class="btn submitBtn">Submit</button>
+      </form>
+      <!-- OUTPUT -->
+      <div class="container">
+        <div class="output" id="cSharpWin">
+          <h4>Based on your input it seems C#/.NET would be a great fit for you!</h4>
+          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a> course.</p>
+        </div>
+        <div class="output" id="cssWin">
+          <h4>Based on your input it seems CSS/Design would be a great fit for you!</h4>
+          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
+        </div>
+        <div class="output" id="rubyWin">
+          <h4>Based on your input it seems Ruby/Rails would be a great fit for you!</h4>
+          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/ruby/">Ruby</a> course.</p>
+        </div>
+        <div class="output" id="cSharpCssTie">
+          <h4>Based on your input it seems C#/.NET or CSS/Design would be a great fit for you!</h4>
+          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a>, <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
+        </div>
+        <div class="output" id="cssRubyTie">
+          <h4>Based on your input it seems Ruby/Rails or CSS/Design would be a great fit for you!</h4>
+          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/ruby/">Ruby</a>, <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
+        </div>
+        <div class="output" id="cSharpRubyTie">
+          <h4>Based on your input it seems C#/.NET or Ruby/Rails would be a great fit for you!</h4>
+          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a> and <a href="https://www.epicodus.com/ruby/">Ruby</a> courses.</p>
 
-    </div>
-  </body>
+        </div>
+
+      </div>
+    </body>
   </html>
