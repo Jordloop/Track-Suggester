@@ -2,7 +2,7 @@ $(function(){
   $("form#user-input").submit(function(event){
     event.preventDefault();
 
-//----------BUSINESSLOGIC----------
+//----------BUSINESS LOGIC----------
     var cSharp = 0
     var cssDesign = 0
     var rubyRails = 0
@@ -14,7 +14,7 @@ $(function(){
     var thirdAnswer = $("#thirdQuestion").val();
     var fourthAnswer = $("#fourthQuestion").val();
     var fifthAnswer = $("#fifthQuestion").val();
-    // FIRSTQUESTIONLOGIC
+    // FIRSTQUESTION LOGIC
     if (
       firstAnswer === "Design") {
         cssDesign ++
@@ -28,7 +28,7 @@ $(function(){
       $(console.log("Error in if code"))
     };
     $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
-    // SECONDQUESTIONLOGIC
+    // SECONDQUESTION LOGIC
     if (
       secondAnswer === "Design") {
         cssDesign ++
@@ -42,7 +42,7 @@ $(function(){
       $(console.log("Error in if code"))
     };
     $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
-    // THIRDQUESTIONLOGIC
+    // THIRDQUESTION LOGIC
     if (
       thirdAnswer === "Design") {
         cssDesign ++
@@ -56,7 +56,7 @@ $(function(){
       $(console.log("Error in if code"))
     };
     $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
-    // FOURTHQUESTIONLOGIC
+    // FOURTHQUESTION LOGIC
     if (
       fourthAnswer === "Design") {
         cssDesign ++
@@ -70,7 +70,7 @@ $(function(){
       $(console.log("Error in if code"))
     };
     $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
-    // FIFTHQUESTIONLOGIC
+    // FIFTHQUESTION LOGIC
     if (
       fifthAnswer === "Design") {
         cssDesign ++
@@ -84,18 +84,44 @@ $(function(){
       $(console.log("Error in if code"))
     };
     $(console.log("C# "+cSharp, "CSS "+cssDesign, "Ruby "+rubyRails));
-//----------INTERFACELOGIC----------
+//----------INTERFACE LOGIC----------
     if (
       cSharp > cssDesign && cSharp > rubyRails) {
         $(console.log("C# wins"))
+        $(".output").hide();
+        $("#cSharpWin").show();
+
     } else if (
       cssDesign > cSharp && cssDesign > rubyRails) {
         $(console.log("cssDesign wins"))
+        $(".output").hide();
+        $("#cssWin").show();
     } else if (
       rubyRails > cSharp && rubyRails > cssDesign) {
         $(console.log("cssDesign wins"))
+                $(".output").hide();
+        $("#rubyWin").show();
+
     } else {
-      $(console.log("Error in if code"))
+      //TIE FINDER
+      if (
+        cSharp === cssDesign && cSharp != rubyRails) {
+          $(console.log("C# and CSS tie"))
+          $(".output").hide();
+          $("#cSharpCssTie").show();
+      } else if (
+        cssDesign === rubyRails && cssDesign != cSharp) {
+          $(console.log("CSS and Ruby tie"))
+          $(".output").hide();
+          $("#cssRubyTie").show();
+
+      } else if (
+        rubyRails === cSharp && rubyRails != cssDesign) {
+          $(console.log("Ruby and C#"))
+          $(".output").hide();
+          $("#cSharpRubyTie").show();
+
+      };
     };
   })
 })

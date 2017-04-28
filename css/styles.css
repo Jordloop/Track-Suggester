@@ -1,3 +1,7 @@
 body {
   background-color: #C0B283
 }
+
+#cSharpWin, #cssWin, #rubyWin, #cSharpCssTie, #cssRubyTie, #cSharpRubyTie {
+  display: none;
+}
