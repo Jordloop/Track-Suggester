@@ -1,8 +1,8 @@
 # Track Suggester
 
 * Users will fill out a form.
-* The users input will assign points to specific variables.
-* "Winning"(most points) variable will cause specific content to be displayed.
+* The users input will award points to specific variables.
+* The "winning"(most points) variable will cause specific content to be displayed.
 * Specific content will be displayed in the event of two variables tying for the win.
 
 ## Getting Started

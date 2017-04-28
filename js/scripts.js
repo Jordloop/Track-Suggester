@@ -13,7 +13,9 @@ $(function(){
     var fourthAnswer = $("#fourthQuestion").val();
     var fifthAnswer = $("#fifthQuestion").val();
 
-//EACH _QUESTION WILL GIVE WILL AWARD THE CORRESPONDING VALUE ONE POINT
+//EACH _QUESTION WILL AWARD THE CORRESPONDING VALUE ONE POINT
+//VIEW THE CONSOLE TO SEE THIS UPON SUBITTING
+
     // FIRSTQUESTION LOGIC
     if (
       firstAnswer === "Design") {
@@ -41,7 +43,7 @@ $(function(){
     } else {
       $(console.log("Error in if code"))
     };
-    $(console.log("C#:: "+cSharp, "CSS:: "+cssDesign, "Ruby:: "+rubyRails));
+    $(console.log("C#: "+cSharp, "CSS: "+cssDesign, "Ruby: "+rubyRails));
     // THIRDQUESTION LOGIC
     if (
       thirdAnswer === "Design") {
@@ -122,5 +124,5 @@ $(function(){
           $("#cSharpRubyTie").fadeIn();
       };
     };
-  })
-})
+  });
+});

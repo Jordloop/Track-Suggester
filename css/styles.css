@@ -9,7 +9,7 @@ body {
 
 #submitBtn {
   margin: 25px;
-  background-color: white;
+  background-color: #b8b8b9
 }
 
 #header * {
@@ -18,10 +18,6 @@ body {
 
 h1 {
   text-align: center;
-}
-
-.formLabel {
-  margin-top: 15px;
 }
 
 #user-input {
