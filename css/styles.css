@@ -1,11 +1,37 @@
 body {
-  background-color: #C0B283
+  background-color: #C0B283;
+  font-family: Sans-serif;
 }
 
 #cSharpWin, #cssWin, #rubyWin, #cSharpCssTie, #cssRubyTie, #cSharpRubyTie {
   display: none;
 }
 
-.submitBtn {
-  margin-top: 10px;
+#submitBtn {
+  margin: 25px;
+  background-color: white;
+}
+
+#header * {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.formLabel {
+  margin-top: 15px;
+}
+
+#user-input {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.output h1 {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
 }

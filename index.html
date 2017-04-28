@@ -9,75 +9,84 @@
   <title></title>
 </head>
   <body>
-    <div class="container">
+
+    <div class="container"id="main-container">
+      <div class="page-header" id="header">
+        <h1>Which course best fits you?</h1>
+        <h5>Fill out our short survey to find out wich course best fits you!</h5>
+      </div>
       <!-- FORM -->
       <form id="user-input">
         <!-- FIRSTQUESTION -->
-        <label for="firstQuestion">Question One</label>
+        <label for="firstQuestion" class="formLabel">Would you rather..</label>
         <select class="form-control" id="firstQuestion">
-          <option value="C#">C#</option>
-          <option value="Design">CSS</option>
-          <option value="Ruby">Ruby</option>
+          <option value="Design">Work on a car's detail</option>
+          <option value="C#">Work on a car's engine.</option>
+          <option value="Ruby">A bit of both.</option>
         </select>
         <!-- SECONDQUESTION -->
-        <label for="secondQuestion">Question Two</label>
+        <label for="secondQuestion" class="formLabel">Do you like stones?</label>
         <select class="form-control" id="secondQuestion">
-          <option value="Design">CSS</option>
-          <option value="C#">C#</option>
-          <option value="Ruby">RUBY</option>
+          <option value="Design">Yes, I like to paint on them.</option>
+          <option value="C#">No</option>
+          <option value="Ruby">Yes, I am a rock. I am an island.</option>
         </select>
         <!-- THIRDQUESTION -->
-        <label for="thirdQuestion">Question Three</label>
+        <label for="thirdQuestion" class="formLabel">Is magic real?</label>
         <select class="form-control" id="thirdQuestion">
-          <option value="Design">CSS</option>
-          <option value="C#">C#</option>
-          <option value="Ruby">RUBY</option>
+          <option value="Design">Yes</option>
+          <option value="C#">No</option>
+          <option value="Ruby">Dragons!</option>
         </select>
         <!-- FOURTHQUESTION -->
-        <label for="fourthQuestion">Question Four</label>
+        <label for="fourthQuestion" class="formLabel">Which course would you suggest a friend take?</label>
         <select class="form-control" id="fourthQuestion">
-          <option value="Design">CSS</option>
-          <option value="C#">C#</option>
-          <option value="Ruby">RUBY</option>
+          <option value="Design">CSS/Design</option>
+          <option value="C#">C#/.NET</option>
+          <option value="Ruby">Ruby/Rails</option>
         </select>
         <!-- FIFTHQUESTION -->
-        <label for="fifthQuestion">Question Five</label>
+        <label for="fifthQuestion" class="formLabel">Which course would you most consider taking?</label>
         <select class="form-control" id="fifthQuestion">
-          <option value="Design">CSS</option>
-          <option value="C#">C#</option>
-          <option value="Ruby">RUBY</option>
+          <option value="Design">CSS/Design</option>
+          <option value="C#">C#/.NET</option>
+          <option value="Ruby">Ruby/Rails</option>
         </select>
         <!-- BUTTON -->
-        <button type="submit" class="btn submitBtn">Submit</button>
+        <button type="submit" id="btn submitBtn">Submit</button>
+        <!-- HIDDEN ELEMENTS/OUTPUT -->
+        <div class="container">
+          <div class="output" id="cSharpWin">
+            <h1>C#/.NET</h1>
+            <h4>Based on your input it seems C#/.NET would be a great fit for you!</h4>
+            <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a> course.</p>
+          </div>
+          <div class="output" id="cssWin">
+            <h1>CSS/Design</h1>
+            <h4>Based on your input it seems CSS/Design would be a great fit for you!</h4>
+            <p>Learn more about Epicodus' <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
+          </div>
+          <div class="output" id="rubyWin">
+            <h1>Ruby/Rails</h1>
+            <h4>Based on your input it seems Ruby/Rails would be a great fit for you!</h4>
+            <p>Learn more about Epicodus' <a href="https://www.epicodus.com/ruby/">Ruby</a> course.</p>
+          </div>
+          <div class="output" id="cSharpCssTie">
+            <h1>C# or CSS/Design</h1>
+            <h4>Based on your input it seems C#/.NET or CSS/Design would be a great fit for you!</h4>
+            <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a>, <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
+          </div>
+          <div class="output" id="cssRubyTie">
+            <h1>CSS/Design or Ruby/Rails</h1>
+            <h4>Based on your input it seems Ruby/Rails or CSS/Design would be a great fit for you!</h4>
+            <p>Learn more about Epicodus' <a href="https://www.epicodus.com/ruby/">Ruby</a>, <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
+          </div>
+          <div class="output" id="cSharpRubyTie">
+            <h1>C# or Ruby/Rails</h1>
+            <h4>Based on your input it seems C#/.NET or Ruby/Rails would be a great fit for you!</h4>
+            <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a> and <a href="https://www.epicodus.com/ruby/">Ruby</a> courses.</p>
+          </div>
       </form>
-      <!-- OUTPUT -->
-      <div class="container">
-        <div class="output" id="cSharpWin">
-          <h4>Based on your input it seems C#/.NET would be a great fit for you!</h4>
-          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a> course.</p>
-        </div>
-        <div class="output" id="cssWin">
-          <h4>Based on your input it seems CSS/Design would be a great fit for you!</h4>
-          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
-        </div>
-        <div class="output" id="rubyWin">
-          <h4>Based on your input it seems Ruby/Rails would be a great fit for you!</h4>
-          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/ruby/">Ruby</a> course.</p>
-        </div>
-        <div class="output" id="cSharpCssTie">
-          <h4>Based on your input it seems C#/.NET or CSS/Design would be a great fit for you!</h4>
-          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a>, <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
-        </div>
-        <div class="output" id="cssRubyTie">
-          <h4>Based on your input it seems Ruby/Rails or CSS/Design would be a great fit for you!</h4>
-          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/ruby/">Ruby</a>, <a href="https://www.epicodus.com/css/">CSS</a> and <a href="https://www.epicodus.com/design/">Design</a> courses.</p>
-        </div>
-        <div class="output" id="cSharpRubyTie">
-          <h4>Based on your input it seems C#/.NET or Ruby/Rails would be a great fit for you!</h4>
-          <p>Learn more about Epicodus' <a href="https://www.epicodus.com/c-sharp/">C#/.NET</a> and <a href="https://www.epicodus.com/ruby/">Ruby</a> courses.</p>
-
-        </div>
-
       </div>
     </body>
   </html>

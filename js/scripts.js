@@ -6,14 +6,14 @@ $(function(){
     var cSharp = 0
     var cssDesign = 0
     var rubyRails = 0
-    var phpDrupal = 0
-    var javaAndroid = 0
 
     var firstAnswer = $("#firstQuestion").val();
     var secondAnswer = $("#secondQuestion").val();
     var thirdAnswer = $("#thirdQuestion").val();
     var fourthAnswer = $("#fourthQuestion").val();
     var fifthAnswer = $("#fifthQuestion").val();
+
+//EACH _QUESTION WILL GIVE WILL AWARD THE CORRESPONDING VALUE ONE POINT
     // FIRSTQUESTION LOGIC
     if (
       firstAnswer === "Design") {
@@ -85,41 +85,41 @@ $(function(){
     };
     $(console.log("C#: "+cSharp, "CSS: "+cssDesign, "Ruby: "+rubyRails));
 //----------INTERFACE LOGIC----------
+
+//FINDS VALUE WITH THE MOST POINTS, THEN RESPONDS ACCORDINGLY
     if (
       cSharp > cssDesign && cSharp > rubyRails) {
         $(console.log("C# wins"))
         $(".output").hide();
-        $("#cSharpWin").show();
+        $("#cSharpWin").fadeIn();
 
     } else if (
       cssDesign > cSharp && cssDesign > rubyRails) {
         $(console.log("cssDesign wins"))
         $(".output").hide();
-        $("#cssWin").show();
+        $("#cssWin").fadeIn();
     } else if (
       rubyRails > cSharp && rubyRails > cssDesign) {
         $(console.log("cssDesign wins"))
-                $(".output").hide();
-        $("#rubyWin").show();
-
+        $(".output").hide();
+        $("#rubyWin").fadeIn();
     } else {
-      //TIE FINDER
+      //IF THERE IS A TIE IT WILL BE FOUND HERE, THEN RESPONDS ACCORDINGLY
       if (
         cSharp === cssDesign && cSharp != rubyRails) {
           $(console.log("C# and CSS tie"))
           $(".output").hide();
-          $("#cSharpCssTie").show();
+          $("#cSharpCssTie").fadeIn();
       } else if (
         cssDesign === rubyRails && cssDesign != cSharp) {
           $(console.log("CSS and Ruby tie"))
           $(".output").hide();
-          $("#cssRubyTie").show();
-
+          $("#cssRubyTie").fadeIn();
       } else if (
         rubyRails === cSharp && rubyRails != cssDesign) {
           $(console.log("Ruby and C#"))
           $(".output").hide();
-          $("#cSharpRubyTie").show();
+          $("#cSharpRubyTie").fadeIn();
       };
     };
   })
